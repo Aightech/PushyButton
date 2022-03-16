@@ -3,7 +3,7 @@
 
 Servo myservo;
 float currpos = 0;
-float targetpos = 35;
+float targetpos = 20;
 int i=0;
 float inc =0.2;
 int pos[2][2] ={{70,35},{0,35}};
@@ -24,7 +24,7 @@ void loop() {
   {
     char c = Serial.read();
     if(c=='#')
-      targetpos=35;  
+      targetpos=20;  
     else if(c=='a')
       targetpos=80;  
   }
